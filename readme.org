@@ -177,7 +177,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 #+NAME: game-l
 | 1          | 2          | 3          | 4          | TAB        |
-| LSFT       | S          | W          | D          | TG(U_BASE) |
+| LSFT       | A          | W          | D          | TG(U_GAME) |
 | LCTL       | Q          | S          | F          | E          |
 | U_NP       | U_NP       | ESC        | LCTL       | SPC        |
 
@@ -401,7 +401,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 
 #+NAME: game-r
 | TAB        | 4          | 3          | 2          | 1          |
-| TG(U_BASE) | D          | W          | S          | LSFT       |
+| TG(U_GAME) | D          | W          | A          | LSFT       |
 | E          | F          | S          | Q          | LCTL       |
 | SPC        | LCTL       | ESC        | U_NP       | U_NP       |
 
