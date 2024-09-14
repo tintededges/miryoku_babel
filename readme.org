@@ -167,19 +167,19 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Fun
 
 #+NAME: fun-l
-| F12  | F7   | F8   | F9   | U_TOG(U_GAME) |
-| F11  | F4   | F5   | F6   | SLCK          |
-| F10  | F1   | F2   | F3   | PAUS          |
-| U_NP | U_NP | APP  | SPC  | TAB           |
+| F12  | F7   | F8   | F9   | U_GAME |
+| F11  | F4   | F5   | F6   | SLCK   |
+| F10  | F1   | F2   | F3   | PAUS   |
+| U_NP | U_NP | APP  | SPC  | TAB    |
 
 
 *** Game
 
 #+NAME: game-l
-| 1    | 2    | 3    | 4    | TAB           |
-| SHIFT| S    | W    | D    | Q             |
-| 7    | 8    | S    | F    | U_TOG(U_BASE) |
-| U_NP | U_NP | ESC  | SPC  | CTRL          |
+| 1    | 2    | 3    | 4    | TAB    |
+| SHIFT| S    | W    | D    | U_BASE |
+| CTRL | Q    | S    | F    | E      |
+| U_NP | U_NP | ESC  | CTRL | SPC    |
 
 
 *** Alternative Layouts
