@@ -167,19 +167,19 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Fun
 
 #+NAME: fun-l
-| F12  | F7   | F8   | F9   | U_GAME |
-| F11  | F4   | F5   | F6   | SLCK   |
-| F10  | F1   | F2   | F3   | PAUS   |
-| U_NP | U_NP | APP  | SPC  | TAB    |
+| F12    | F7     | F8     | F9     | U_GAME |
+| F11    | F4     | F5     | F6     | SLCK   |
+| F10    | F1     | F2     | F3     | PAUS   |
+| U_NP   | U_NP   | APP    | SPC    | TAB    |
 
 
 *** Game
 
 #+NAME: game-l
-| 1    | 2    | 3    | 4    | TAB    |
-| SHIFT| S    | W    | D    | U_BASE |
-| CTRL | Q    | S    | F    | E      |
-| U_NP | U_NP | ESC  | CTRL | SPC    |
+| 1      | 2      | 3      | 4      | TAB    |
+| SHIF   | S      | W      | D      | U_BASE |
+| CTRL   | Q      | S      | F      | E      |
+| U_NP   | U_NP   | ESC    | CTRL   | SPC    |
 
 
 *** Alternative Layouts
@@ -670,6 +670,8 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad, SVG, KMK)
 | DF(U_BASE)  | TD(U_TD_U_BASE)  | &u_to_U_BASE  | U_DF(U_BASE)  | U_DF(U_BASE)  | U_DF(U_BASE)  |
 | DF(U_EXTRA) | TD(U_TD_U_EXTRA) | &u_to_U_EXTRA | U_DF(U_EXTRA) | U_DF(U_EXTRA) | U_DF(U_EXTRA) |
 | DF(U_TAP)   | TD(U_TD_U_TAP)   | &u_to_U_TAP   | U_DF(U_TAP)   | U_DF(U_TAP)   | U_DF(U_TAP)   |
+| DF(U_GAME)  | TD(U_TD_U_GAME)  | &u_to_U_GAME  | U_DF(U_GAME)  | U_DF(U_GAME)  | U_DF(U_GAME)  |
+| TG(U_GAME)  | TG(U_TD_U_GAME)  | &u_tog_U_GAME |               |               |               |
 | DLR         | DLR              | DLLR          | $             | $             | DLR           |
 | DOT         | DOT              | DOT           | .             | .             | DOT           |
 | DOWN        | DOWN             | DOWN          | down          | Down          | DOWN          |
