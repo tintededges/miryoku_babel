@@ -1664,7 +1664,7 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 
 #define MIRYOKU_ALTERNATIVES_GAME \
-<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-l, mode="l")>>
 
 #+END_SRC
 
@@ -1911,7 +1911,7 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 
 #define MIRYOKU_ALTERNATIVES_GAME \
-<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-l, mode="l")>>
 
 #+END_SRC
 
@@ -2157,7 +2157,7 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 
 #define MIRYOKU_ALTERNATIVES_GAME \
-<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-l, mode="l")>>
 
 #+END_SRC
 
@@ -2400,7 +2400,7 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 
 #define MIRYOKU_ALTERNATIVES_GAME \
-<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-l, mode="l")>>
 
 #+END_SRC
 
@@ -2645,7 +2645,7 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 
 #define MIRYOKU_ALTERNATIVES_GAME \
-<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-l, mode="l")>>
 
 #+END_SRC
 
