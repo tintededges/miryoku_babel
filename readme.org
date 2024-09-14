@@ -167,10 +167,19 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Fun
 
 #+NAME: fun-l
-| F12  | F7   | F8   | F9   | PSCR |
-| F11  | F4   | F5   | F6   | SLCK |
-| F10  | F1   | F2   | F3   | PAUS |
-| U_NP | U_NP | APP  | SPC  | TAB  |
+| F12  | F7   | F8   | F9   | U_TOG(U_GAME) |
+| F11  | F4   | F5   | F6   | SLCK          |
+| F10  | F1   | F2   | F3   | PAUS          |
+| U_NP | U_NP | APP  | SPC  | TAB           |
+
+
+*** Game
+
+#+NAME: game-l
+| 1    | 2    | 3    | 4    | TAB           |
+| SHIFT| S    | W    | D    | Q             |
+| 7    | 8    | S    | F    | U_TOG(U_BASE) |
+| U_NP | U_NP | ESC  | SPC  | CTRL          |
 
 
 *** Alternative Layouts
@@ -499,6 +508,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_NUM    | Num    |
 | U_SYM    | Sym    |
 | U_FUN    | Fun    |
+| U_GAME   | Game   |
 
 
 **** symbol-names
@@ -1299,6 +1309,9 @@ Body of miryoku_layer_selection.h.
 #if !defined(MIRYOKU_LAYERMAPPING_FUN)
   #define MIRYOKU_LAYERMAPPING_FUN MIRYOKU_MAPPING
 #endif
+#if !defined(MIRYOKU_LAYER_GAME)
+  #define MIRYOKU_LAYER_GAME MIRYOKU_ALTERNATIVES_GAME
+#endif
 #+END_SRC
 
 
@@ -1329,7 +1342,8 @@ MIRYOKU_X(MOUSE,  "Mouse") \
 MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
-MIRYOKU_X(FUN,    "Fun")
+MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(GAME,   "Gaming")
 #+end_example
 
 
@@ -1363,6 +1377,7 @@ return results
 #define U_NUM    "Num"
 #define U_SYM    "Sym"
 #define U_FUN    "Fun"
+#define U_GAME   "Game"
 #+end_example
 
 
@@ -1647,6 +1662,10 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 <<table-layer-full(current_layer_name="U_BUTTON", alphas_table=button, thumbs_table=button-thumbs)>>
 
+
+#define MIRYOKU_ALTERNATIVES_GAME \
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+
 #+END_SRC
 
 
@@ -1890,7 +1909,12 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 <<table-layer-full(current_layer_name="U_BUTTON", alphas_table=button, thumbs_table=button-thumbs)>>
 
+
+#define MIRYOKU_ALTERNATIVES_GAME \
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
+
 #+END_SRC
+
 
 **** [[tangled/zmk/miryoku_layer_selection.h]]
 
@@ -2106,6 +2130,7 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 <<table-layer-half(current_layer_name="U_MEDIA", opposite_layer_name="U_FUN", half_table=media-r, mode="r")>>
 
 
+
 #define MIRYOKU_ALTERNATIVES_NUM_FLIP \
 <<table-layer-half(current_layer_name="U_NUM", opposite_layer_name="U_NAV", half_table=num-r, mode="r", hold_table=hold-flip)>>
 
@@ -2129,6 +2154,10 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 <<table-layer-full(current_layer_name="U_BUTTON", alphas_table=button, thumbs_table=button-thumbs)>>
+
+
+#define MIRYOKU_ALTERNATIVES_GAME \
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
 
 #+END_SRC
 
@@ -2368,6 +2397,10 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 <<table-layer-full(current_layer_name="U_BUTTON", alphas_table=button, thumbs_table=button-thumbs)>>
+
+
+#define MIRYOKU_ALTERNATIVES_GAME \
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
 
 #+END_SRC
 
@@ -2609,6 +2642,10 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
 <<table-layer-full(current_layer_name="U_BUTTON", alphas_table=button, thumbs_table=button-thumbs)>>
+
+
+#define MIRYOKU_ALTERNATIVES_GAME \
+<<table-layer-half(current_layer_name="U_GAME", opposite_layer_name="U_MOUSE", half_table=game-r, mode="l")>>
 
 #+END_SRC
 
