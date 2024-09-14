@@ -10,6 +10,21 @@
 This document describes Miryoku Babel only.  For Miryoku documentation, implementations, and discussions and support, see [[https://github.com/manna-harbour/miryoku/][Miryoku]].
 
 
+** Fork changes
+
+This repo adds a layer, named "GAME", which is activated with the upper right button of the functions ("FUN") layer. 
+The button toggles the layer until the same button is hit again.
+
+The layout is as follows (awkwardly formatted to avoid interferring with the file parsing):
+
+- 1, 2, 3, 4, exit_gaming_layer
+- shift, a, w, d, f
+- ctrl, q, s, e, tab
+- esc, ctrl, space
+
+
+
+
 ** Overview
 
 [[https://www.gnu.org/software/emacs/][Emacs]] is an extensible text editor.  [[https://orgmode.org/][Org]] is an emacs mode for structured text. [[https://orgmode.org/worg/org-contrib/babel/][Babel]] is org's ability to execute source code from within org documents.  This org document uses babel to generate the layer data source files for Miryoku implementations.
