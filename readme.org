@@ -127,10 +127,10 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Mouse
 
 #+NAME: mouse-r
-| U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-|       | MS_L  | MS_D  | MS_U  | MS_R  |
-|       | WH_L  | WH_D  | WH_U  | WH_R  |
-| BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+| U_RDO      | U_PST      | U_CPY      | U_CUT      | U_UND      |
+| TG(U_GAME) | MS_L       | MS_D       | MS_U       | MS_R       |
+|            | WH_L       | WH_D       | WH_U       | WH_R       |
+| BTN2       | BTN1       | BTN3       | U_NP       | U_NP       |
 
 
 *** Button
@@ -185,7 +185,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 The ~Game~ layer isn't used by default, but can be enabled by binding any key to ~TG(U_GAME)~.
 
 #+NAME: game-l
-| 1          | 2          | 3          | 4          | TG(U_GAME) |
+| 1          | 2          | 3          | 4          | 5          |
 | LSFT       | A          | W          | D          | F          |
 | LALT       | Q          | S          | E          | TAB        |
 | U_NP       | U_NP       | ESC        | LCTL       | SPC        |
@@ -309,10 +309,10 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Mouse
 
 #+NAME: mouse-r-vi
-| U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-| MS_L  | MS_D  | MS_U  | MS_R  |       |
-| WH_L  | WH_D  | WH_U  | WH_R  |       |
-| BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+| U_RDO      | U_PST      | U_CPY      | U_CUT      | U_UND      |
+| MS_L       | MS_D       | MS_U       | MS_R       | TG(U_GAME) |
+| WH_L       | WH_D       | WH_U       | WH_R       |            |
+| BTN2       | BTN1       | BTN3       | U_NP       | U_NP       |
 
 
 ****** Media
@@ -341,10 +341,10 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Mouse
 
 #+NAME: mouse-r-invertedt
-|       | WH_L  | MS_U  | WH_R  | WH_U  |
-|       | MS_L  | MS_D  | MS_R  | WH_D  |
-| U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-| BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
+|            | WH_L       | MS_U       | WH_R       | WH_U       |
+| TG(U_GAME) | MS_L       | MS_D       | MS_R       | WH_D       |
+| U_RDO      | U_PST      | U_CPY      | U_CUT      | U_UND      |
+| BTN2       | BTN1       | BTN3       | U_NP       | U_NP       |
 
 
 ****** Media
@@ -409,7 +409,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Game
 
 #+NAME: game-r
-| TG(U_GAME) | 4          | 3          | 2          | 1          |
+| 5          | 4          | 3          | 2          | 1          |
 | F          | D          | W          | A          | LSFT       |
 | TAB        | e          | S          | Q          | LALT       |
 | SPC        | LCTL       | ESC        | U_NP       | U_NP       |
@@ -430,10 +430,10 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ******** Mouse
 
 #+NAME: mouse-l
-| WH_L  | WH_D  | WH_U  | WH_R  |       |
-| MS_L  | MS_D  | MS_U  | MS_R  |       |
-| U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | BTN3  | BTN1  | BTN2  |
+| WH_L        | WH_D        | WH_U        | WH_R        |             |
+| MS_L        | MS_D        | MS_U        | MS_R        | TG(U_GAME)  |
+| U_UND       | U_CUT       | U_CPY       | U_PST       | U_RDO       |
+| U_NP        | U_NP        | BTN3        | BTN1        | BTN2        |
 
 
 ******** Media
@@ -462,10 +462,10 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ******** Mouse
 
 #+NAME: mouse-l-invertedt
-| WH_U  | WH_L  | MS_U  | WH_R  |       |
-| WH_D  | MS_L  | MS_D  | MS_R  |       |
-| U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | BTN3  | BTN1  | BTN2  |
+| WH_U       | WH_L       | MS_U       | WH_R  |            |
+| WH_D       | MS_L       | MS_D       | MS_R  | TG(U_GAME) |
+| U_UND      | U_CUT      | U_CPY      | U_PST | U_RDO      |
+| U_NP       | U_NP       | BTN3       | BTN1  | BTN2       |
 
 
 ******** Media
@@ -2722,3 +2722,4 @@ Keycodes that match any of these prefixes will not have ~KC.~ automatically prep
 ** 
 
 [[https://github.com/manna-harbour][https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/manna-harbour-boa-32.png]]
+
