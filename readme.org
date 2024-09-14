@@ -12,6 +12,8 @@ This document describes Miryoku Babel only.  For Miryoku documentation, implemen
 
 ** Overview
 
+This file can be edited and used to generate Miryoku layouts.
+
 [[https://www.gnu.org/software/emacs/][Emacs]] is an extensible text editor.  [[https://orgmode.org/][Org]] is an emacs mode for structured text. [[https://orgmode.org/worg/org-contrib/babel/][Babel]] is org's ability to execute source code from within org documents.  This org document uses babel to generate the layer data source files for Miryoku implementations.
 
 [[#layer-tables][Layers]] and [[#alternative-layouts][alternative layouts]] are maintained in org tables.  The tables are [[#tangling][tangled]] into [[#tangled-files][source files]] via [[#scripts-and-data][python scripts and additional data tables]].
@@ -74,10 +76,9 @@ After modifying this document, visit the Actions tab, select the Build workflow,
 
 The layers are maintained in tables.  ~U_NP~ indicates the key is not present and is used to fill in the table around the thumb keys.
 
-Basic keycodes are entered without a common prefix.  Symbols can be entered as-is, except for '-' (~MINS~), '.' (~DOT~), '|' (~PIPE~), and '"' (~DQUO~). Empty cells are unused.
+Basic keycodes are entered without a common prefix.  Symbols can be entered as-is, except for '-' (~MINS~), '.' (~DOT~), '|' (~PIPE~), and '"' (~DQUO~).  Empty cells are unused.  Other keycodes are in the keycode-translations table.  Layers can be changed with 'DF(layer)' or toggled with 'TG(layer)' when supported in keycode-translations.
 
-The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer.
-
+The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer.  
 
 
 *** Base
@@ -179,7 +180,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 #+NAME: game-l
 | 1          | 2          | 3          | 4          | TG(U_GAME) |
 | LSFT       | A          | W          | D          | F          |
-| LCTL       | Q          | S          | E          | TAB        |
+| LALT       | Q          | S          | E          | TAB        |
 | U_NP       | U_NP       | ESC        | LCTL       | SPC        |
 
 
@@ -403,7 +404,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 #+NAME: game-r
 | TG(U_GAME) | 4          | 3          | 2          | 1          |
 | F          | D          | W          | A          | LSFT       |
-| TAB        | e          | S          | Q          | LCTL       |
+| TAB        | e          | S          | Q          | LALT       |
 | SPC        | LCTL       | ESC        | U_NP       | U_NP       |
 
 
