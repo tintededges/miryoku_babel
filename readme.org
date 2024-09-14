@@ -83,7 +83,7 @@ The layers are maintained in tables.  ~U_NP~ indicates the key is not present an
 
 Basic keycodes are entered without a common prefix.  Symbols can be entered as-is, except for '-' (~MINS~), '.' (~DOT~), '|' (~PIPE~), and '"' (~DQUO~).  Empty cells are unused.  Other keycodes are in the keycode-translations table.  Layers can be changed with ~DF(layer)~ or toggled with ~TG(layer)~' when supported in keycode-translations.
 
-The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer.  
+The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer. 
 
 
 *** Base
