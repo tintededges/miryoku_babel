@@ -677,7 +677,7 @@ Source keycode to implementation equivalent (source, QMK, ZMK, KMonad, SVG, KMK)
 | DF(U_EXTRA) | TD(U_TD_U_EXTRA) | &u_to_U_EXTRA | U_DF(U_EXTRA) | U_DF(U_EXTRA) | U_DF(U_EXTRA) |
 | DF(U_TAP)   | TD(U_TD_U_TAP)   | &u_to_U_TAP   | U_DF(U_TAP)   | U_DF(U_TAP)   | U_DF(U_TAP)   |
 | DF(U_GAME)  | TD(U_TD_U_GAME)  | &u_to_U_GAME  | U_DF(U_GAME)  | U_DF(U_GAME)  | U_DF(U_GAME)  |
-| TG(U_GAME)  | TG(U_TD_U_GAME)  | &u_tog_U_GAME |               |               |               |
+| TG(U_GAME)  | TG(U_TD_U_GAME)  | &tog U_GAME   |               |               |               |
 | DLR         | DLR              | DLLR          | $             | $             | DLR           |
 | DOT         | DOT              | DOT           | .             | .             | DOT           |
 | DOWN        | DOWN             | DOWN          | down          | Down          | DOWN          |
