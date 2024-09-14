@@ -167,7 +167,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Fun
 
 #+NAME: fun-l
-| F12        | F7         | F8         | F9         | DF(U_GAME) |
+| F12        | F7         | F8         | F9         | TG(U_GAME) |
 | F11        | F4         | F5         | F6         | SLCK       |
 | F10        | F1         | F2         | F3         | PAUS       |
 | U_NP       | U_NP       | APP        | SPC        | TAB        |
@@ -391,7 +391,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Fun
 
 #+NAME: fun-r
-| DF(U_GAME) | F7         | F8         | F9         | F12        |
+| TG(U_GAME) | F7         | F8         | F9         | F12        |
 | SLCK       | F4         | F5         | F6         | F11        |
 | PAUS       | F1         | F2         | F3         | F10        |
 | TAB        | SPC        | APP        | U_NP       | U_NP       |
