@@ -67,7 +67,7 @@ The Test workflow is not applicable when using the Build workflow and should be 
 
 ***** Tangle
 
-Make your changes to this document, then visit the Actions tab, select the Build workflow, select Run workflow, select the Branch if desired, activate Run workflow, select the Artifacts, and unzip the downloaded zip file.
+After modifying this document, visit the Actions tab, select the Build workflow, select Run workflow, select the Branch if desired, activate Run workflow, select the Artifacts, and unzip the downloaded zip file.
 
 
 ** Layer Tables
@@ -77,6 +77,7 @@ The layers are maintained in tables.  ~U_NP~ indicates the key is not present an
 Basic keycodes are entered without a common prefix.  Symbols can be entered as-is, except for '-' (~MINS~), '.' (~DOT~), '|' (~PIPE~), and '"' (~DQUO~). Empty cells are unused.
 
 The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer.
+
 
 
 *** Base
