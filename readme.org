@@ -10,31 +10,9 @@
 This document describes Miryoku Babel only.  For Miryoku documentation, implementations, and discussions and support, see [[https://github.com/manna-harbour/miryoku/][Miryoku]].
 
 
-** Fork changes
-
-This repo adds a layer, named "GAME", which is activated with the upper right button of the functions ("FUN") layer. 
-The button toggles the layer until the same button is hit again.
-
-The layout is as follows (awkwardly formatted to avoid interferring with the file parsing):
-
-- 1, 2, 3, 4, exit_gaming_layer
-- shift, a, w, d, f
-- ctrl, q, s, e, tab
-- esc, ctrl, space
-
-
-To make your own changes based off of this, you can check out https://github.com/tintededges/miryoku_babel-Gaming-layer
-
-Fork it, edit readme.org, and use the "build" action in the "actions" tab. Once it's done, you can refresh and download the zip file. 
-After that, unzip it and find the folder for you, e.g. ZMK, into the "/miryoku/miryoku_babel/" directory in your main miryoku repo.
-
-Currently only QMK and ZMK are supported, because I couldn't find the command to toggle a layer for other formats. 
-You can fix this by searching the babel "readme.org" for "&tog U_GAME" to find where these translations are written, and figure out how to do that for your format. 
-
-
-
-
 ** Overview
+
+This file can be edited and used to generate Miryoku layouts.
 
 [[https://www.gnu.org/software/emacs/][Emacs]] is an extensible text editor.  [[https://orgmode.org/][Org]] is an emacs mode for structured text. [[https://orgmode.org/worg/org-contrib/babel/][Babel]] is org's ability to execute source code from within org documents.  This org document uses babel to generate the layer data source files for Miryoku implementations.
 
@@ -91,16 +69,21 @@ The Test workflow is not applicable when using the Build workflow and should be 
 
 ***** Tangle
 
-Visit the Actions tab, select the Build workflow, select Run workflow, select the Branch if desired, activate Run workflow, select the Artifacts, and unzip the downloaded zip file.
+After modifying this document, visit the Actions tab, select the Build workflow, select Run workflow, select the Branch if desired, activate Run workflow, select the Artifacts, and unzip the downloaded zip file.
+
+
+** After tangling
+
+After tangling, the resulting layout files can be used by placing them in the ~/miryoku/miryoku_babel~ folder of your miryoku repository files.
 
 
 ** Layer Tables
 
 The layers are maintained in tables.  ~U_NP~ indicates the key is not present and is used to fill in the table around the thumb keys.
 
-Basic keycodes are entered without a common prefix.  Symbols can be entered as-is, except for '-' (~MINS~), '.' (~DOT~), '|' (~PIPE~), and '"' (~DQUO~). Empty cells are unused.
+Basic keycodes are entered without a common prefix.  Symbols can be entered as-is, except for '-' (~MINS~), '.' (~DOT~), '|' (~PIPE~), and '"' (~DQUO~).  Empty cells are unused.  Other keycodes are in the keycode-translations table.  Layers can be changed with ~DF(layer)~ or toggled with ~TG(layer)~' when supported in keycode-translations.
 
-The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer.
+The base layer is maintained as separate tables for tap alphas, tap thumbs, and hold.  Other layers are specified as a single hand including thumbs.  Tables are combined to produce the keymap data for each layer. 
 
 
 *** Base
@@ -191,7 +174,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Fun
 
 #+NAME: fun-l
-| F12        | F7         | F8         | F9         | TG(U_GAME) |
+| F12        | F7         | F8         | F9         | PSCR       |
 | F11        | F4         | F5         | F6         | SLCK       |
 | F10        | F1         | F2         | F3         | PAUS       |
 | U_NP       | U_NP       | APP        | SPC        | TAB        |
@@ -199,10 +182,12 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 *** Game
 
+The ~Game~ layer isn't used by default, but can be enabled by binding any key to ~TG(U_GAME)~.
+
 #+NAME: game-l
 | 1          | 2          | 3          | 4          | TG(U_GAME) |
 | LSFT       | A          | W          | D          | F          |
-| LCTL       | Q          | S          | E          | TAB        |
+| LALT       | Q          | S          | E          | TAB        |
 | U_NP       | U_NP       | ESC        | LCTL       | SPC        |
 
 
@@ -415,7 +400,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Fun
 
 #+NAME: fun-r
-| TG(U_GAME) | F7         | F8         | F9         | F12        |
+| PSCR       | F7         | F8         | F9         | F12        |
 | SLCK       | F4         | F5         | F6         | F11        |
 | PAUS       | F1         | F2         | F3         | F10        |
 | TAB        | SPC        | APP        | U_NP       | U_NP       |
@@ -426,7 +411,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 #+NAME: game-r
 | TG(U_GAME) | 4          | 3          | 2          | 1          |
 | F          | D          | W          | A          | LSFT       |
-| TAB        | e          | S          | Q          | LCTL       |
+| TAB        | e          | S          | Q          | LALT       |
 | SPC        | LCTL       | ESC        | U_NP       | U_NP       |
 
 
