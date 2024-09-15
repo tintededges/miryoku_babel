@@ -112,7 +112,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |         |       | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
 | LGUI     | LALT      | LCTL        | LSFT       |         |       | LSFT       | LCTL        | LALT      | LGUI     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |         |       | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_MEDIA     | U_NAV      | U_MOUSE | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
+| U_NP     | U_NP      | U_MEDIA     | U_MOUSE    | U_NAV   | U_SYM | U_NUM      | U_FUN       | U_NP      | U_NP     |
 
 
 *** Nav
@@ -136,9 +136,9 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Button
 
 #+NAME: button
-| U_UND | U_CUT | U_CPY | U_PST | U_RDO | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
-| LGUI  | LALT  | LCTL  | LSFT  |       |       | LSFT  | LCTL  | LALT  | LGUI  |
-| U_UND | U_CUT | U_CPY | U_PST | U_RDO | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
+| BOOT      | U_CUT     | U_CPY     | U_PST     | U_RDO      | U_RDO      | U_PST     | U_CPY     | U_CUT     | BOOT      |
+| LGUI      | LALT      | LCTL      | LSFT      | TG(U_GAME) | TG(U_GAME) | LSFT      | LCTL      | LALT      | LGUI      |
+| U_UND     | U_CUT     | U_CPY     | U_PST     | U_RDO      | U_RDO      | U_PST     | U_CPY     | U_CUT     | U_UND     |
 
 #+NAME: button-thumbs
 | U_NP  | U_NP  | BTN3  | BTN1  | BTN2  | BTN2  | BTN1  | BTN3  | U_NP  | U_NP  |
