@@ -103,7 +103,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 ***** Thumbs
 
 #+NAME: thumbs
-| U_NP  | U_NP  | ESC   | TAB   | SPC   | ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| U_NP  | U_NP  | ESC   | TAB   | SPC   | BSPC  | ENT   | DEL   | U_NP  | U_NP  |
 
 
 **** Hold
@@ -121,7 +121,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | U_RDO  | U_PST | U_CPY | U_CUT | U_UND |
 | CPSWRD | LEFT  | DOWN  | UP    | RGHT  |
 | INS    | HOME  | PGDN  | PGUP  | END   |
-| ENT    | BSPC  | DEL   | U_NP  | U_NP  |
+| BSPC   | ENT   | DEL   | U_NP  | U_NP  |
 
 
 *** Mouse
@@ -303,7 +303,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND  |
 | LEFT  | DOWN  | UP    | RGHT  | CPSWRD |
 | HOME  | PGDN  | PGUP  | END   | INS    |
-| ENT   | BSPC  | DEL   | U_NP  | U_NP   |
+| BSPC  | ENT   | DEL   | U_NP  | U_NP   |
 
 
 ****** Mouse
@@ -335,7 +335,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | INS    | HOME  | UP    | END   | PGUP  |
 | CPSWRD | LEFT  | DOWN  | RGHT  | PGDN  |
 | U_RDO  | U_PST | U_CPY | U_CUT | U_UND |
-| ENT    | BSPC  | DEL   | U_NP  | U_NP  |
+| BSPC   | ENT   | DEL   | U_NP  | U_NP  |
 
 
 ****** Mouse
@@ -367,7 +367,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Thumbs
 
 #+NAME: thumbs-flip
-| U_NP | U_NP | DEL  | BSPC | ENT  | SPC  | TAB  | ESC  | U_NP | U_NP |
+| U_NP | U_NP | DEL  | ENT  | BSPC | SPC  | TAB  | ESC  | U_NP | U_NP |
 
 
 ****** Hold
@@ -424,7 +424,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | HOME  | PGDN  | PGUP  | END   | INS    |
 | LEFT  | DOWN  | UP    | RGHT  | CPSWRD |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO  |
-| U_NP  | U_NP  | DEL   | BSPC  | ENT    |
+| U_NP  | U_NP  | DEL   | ENT   | BSPC   |
 
 
 ******** Mouse
@@ -456,7 +456,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | PGUP  | HOME  | UP    | END   | INS    |
 | PGDN  | LEFT  | DOWN  | RGHT  | CPSWRD |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO  |
-| U_NP  | U_NP  | DEL   | BSPC  | ENT    |
+| U_NP  | U_NP  | DEL   | ENT   | BSPC   |
 
 
 ******** Mouse
@@ -493,7 +493,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 |      |      |      |      |      |
 |      |      |      |      |      |
 |      |      |      |      |      |
-| ENT  | BSPC | DEL  | U_NP | U_NP |
+| BSPC | ENT  | DEL  | U_NP | U_NP |
 
 #+NAME: tem-l
 | <l4> | <l4> | <l4> | <l4> | <l4> |
@@ -941,10 +941,10 @@ results
 #+END_SRC
 
 #+RESULTS: table-layer-taphold
-: "Q",                "W",               "F",                 "P",                 "B",                 "J",                 "L",                  "U",                  "Y",                        U_S("&quot;", "&apos;"),\
-: U_MT("A", "Meta")  ,U_MT("R", "Alt"),  U_MT("S", "Ctrl"),   U_MT("T", "Shift"),  "G",                 "M",                 U_MT("N", "Shift"),   U_MT("E", "Ctrl"),    U_MT("I", "Alt"),           U_MT("O", "Meta"), \
-: U_LT("Z", U_BUTTON),U_MT("X", "AltGR"),"C",                 "D",                 "V",                 "K",                 "H",                  U_S("&lt;", U_COMM),  U_SMT("&gt;", ".", "AltGR"),U_SLT("?", "/", U_BUTTON),\
-: U_NP,               U_NP,              U_LT("Tab", U_MEDIA),U_LT("Esc", U_MOUSE),U_LT("Space", U_NAV),U_LT("Enter", U_SYM),U_LT("Bckspc", U_NUM),U_LT("Delete", U_FUN),U_NP,                       U_NP
+: "Q",                "W",               "F",                 "P",                 "B",                 "J",                  "L",                 "U",                  "Y",                        U_S("&quot;", "&apos;"),\
+: U_MT("A", "Meta")  ,U_MT("R", "Alt"),  U_MT("S", "Ctrl"),   U_MT("T", "Shift"),  "G",                 "M",                  U_MT("N", "Shift"),  U_MT("E", "Ctrl"),    U_MT("I", "Alt"),           U_MT("O", "Meta"), \
+: U_LT("Z", U_BUTTON),U_MT("X", "AltGR"),"C",                 "D",                 "V",                 "K",                  "H",                 U_S("&lt;", U_COMM),  U_SMT("&gt;", ".", "AltGR"),U_SLT("?", "/", U_BUTTON),\
+: U_NP,               U_NP,              U_LT("Tab", U_MEDIA),U_LT("Esc", U_MOUSE),U_LT("Space", U_NAV),U_LT("Bckspc", U_SYM),U_LT("Enter", U_NUM),U_LT("Delete", U_FUN),U_NP,                       U_NP
 
 
 **** table-layer-half
