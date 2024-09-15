@@ -103,7 +103,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 ***** Thumbs
 
 #+NAME: thumbs
-| U_NP  | U_NP  | ESC   | SPC   | TAB   | ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| U_NP  | U_NP  | ESC   | TAB   | SPC   | ENT   | BSPC  | DEL   | U_NP  | U_NP  |
 
 
 **** Hold
@@ -177,7 +177,7 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | F12        | F7         | F8         | F9         | PSCR       |
 | F11        | F4         | F5         | F6         | SLCK       |
 | F10        | F1         | F2         | F3         | PAUS       |
-| U_NP       | U_NP       | APP        | SPC        | TAB        |
+| U_NP       | U_NP       | APP        | TAB        | SPC        |
 
 
 *** Game
@@ -367,7 +367,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 ****** Thumbs
 
 #+NAME: thumbs-flip
-| U_NP | U_NP | DEL  | BSPC | ENT  | TAB  | SPC  | ESC  | U_NP | U_NP |
+| U_NP | U_NP | DEL  | BSPC | ENT  | SPC  | TAB  | ESC  | U_NP | U_NP |
 
 
 ****** Hold
@@ -403,7 +403,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | PSCR       | F7         | F8         | F9         | F12        |
 | SLCK       | F4         | F5         | F6         | F11        |
 | PAUS       | F1         | F2         | F3         | F10        |
-| TAB        | SPC        | APP        | U_NP       | U_NP       |
+| SPC        | TAB        | APP        | U_NP       | U_NP       |
 
 
 ****** Game
@@ -501,7 +501,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 |      |      |      |      |      |
 |      |      |      |      |      |
 |      |      |      |      |      |
-| U_NP | U_NP | ESC  | SPC  | TAB  |
+| U_NP | U_NP | ESC  | TAB  | SPC  |
 
 
 ** Scripts and Data
@@ -517,8 +517,8 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_EXTRA  | Extra  |
 | U_TAP    | Tap    |
 | U_BUTTON | Button |
-| U_NAV    | Nav    |
 | U_MOUSE  | Mouse  |
+| U_NAV    | Nav    |
 | U_MEDIA  | Media  |
 | U_NUM    | Num    |
 | U_SYM    | Sym    |
@@ -941,10 +941,10 @@ results
 #+END_SRC
 
 #+RESULTS: table-layer-taphold
-: "Q",               "W",               "F",               "P",               "B",               "J",               "L",               "U",               "Y",               U_S("&quot;", "&apos;"),\
-: U_MT("A", "Meta"), U_MT("R", "Alt"),  U_MT("S", "Ctrl"), U_MT("T", "Shift"),"G",               "M",               U_MT("N", "Shift"),U_MT("E", "Ctrl"), U_MT("I", "Alt"),  U_MT("O", "Meta"), \
-: U_LT("Z", U_BUTTON),U_MT("X", "AltGR"),"C",               "D",               "V",               "K",               "H",               U_S("&lt;", U_COMM),U_SMT("&gt;", ".", "AltGR"),U_SLT("?", "/", U_BUTTON),\
-: U_NP,              U_NP,              U_LT("Esc", U_MEDIA),U_LT("Space", U_MOUSE),U_LT("Tab", U_NAV),U_LT("Enter", U_SYM),U_LT("Bckspc", U_NUM),U_LT("Delete", U_FUN),U_NP,              U_NP
+: "Q",                "W",               "F",                 "P",                 "B",                 "J",                 "L",                  "U",                  "Y",                        U_S("&quot;", "&apos;"),\
+: U_MT("A", "Meta")  ,U_MT("R", "Alt"),  U_MT("S", "Ctrl"),   U_MT("T", "Shift"),  "G",                 "M",                 U_MT("N", "Shift"),   U_MT("E", "Ctrl"),    U_MT("I", "Alt"),           U_MT("O", "Meta"), \
+: U_LT("Z", U_BUTTON),U_MT("X", "AltGR"),"C",                 "D",                 "V",                 "K",                 "H",                  U_S("&lt;", U_COMM),  U_SMT("&gt;", ".", "AltGR"),U_SLT("?", "/", U_BUTTON),\
+: U_NP,               U_NP,              U_LT("Tab", U_MEDIA),U_LT("Esc", U_MOUSE),U_LT("Space", U_NAV),U_LT("Enter", U_SYM),U_LT("Bckspc", U_NUM),U_LT("Delete", U_FUN),U_NP,                       U_NP
 
 
 **** table-layer-half
@@ -1362,8 +1362,8 @@ MIRYOKU_X(BASE,   "Base") \
 MIRYOKU_X(EXTRA,  "Extra") \
 MIRYOKU_X(TAP,    "Tap") \
 MIRYOKU_X(BUTTON, "Button") \
-MIRYOKU_X(NAV,    "Nav") \
 MIRYOKU_X(MOUSE,  "Mouse") \
+MIRYOKU_X(NAV,    "Nav") \
 MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
@@ -1396,8 +1396,8 @@ return results
 #define U_EXTRA  "Extra"
 #define U_TAP    "Tap"
 #define U_BUTTON "Button"
-#define U_NAV    "Nav"
 #define U_MOUSE  "Mouse"
+#define U_NAV    "Nav"
 #define U_MEDIA  "Media"
 #define U_NUM    "Num"
 #define U_SYM    "Sym"
