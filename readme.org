@@ -376,7 +376,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | BOOT     | DF(U_TAP) | DF(U_EXTRA) | DF(U_BASE) |       |         | DF(U_BASE) | DF(U_EXTRA) | DF(U_TAP) | BOOT     |
 | LGUI     | LALT      | LCTL        | LSFT       |       |         | LSFT       | LCTL        | LALT      | LGUI     |
 | U_BUTTON | ALGR      | LOCK_OPP    | LOCK_CUR   |       |         | LOCK_CUR   | LOCK_OPP    | ALGR      | U_BUTTON |
-| U_NP     | U_NP      | U_FUN       | U_NUM      | U_SYM | U_MOUSE | U_NAV      | U_MEDIA     | U_NP      | U_NP     |
+| U_NP     | U_NP      | U_FUN       | U_NUM      | U_SYM | U_NAV   | U_MOUSE    | U_MEDIA     | U_NP      | U_NP     |
 
 
 ****** Num
@@ -944,7 +944,7 @@ results
 : "Q",               "W",               "F",               "P",               "B",               "J",               "L",               "U",               "Y",               U_S("&quot;", "&apos;"),\
 : U_MT("A", "Meta"), U_MT("R", "Alt"),  U_MT("S", "Ctrl"), U_MT("T", "Shift"),"G",               "M",               U_MT("N", "Shift"),U_MT("E", "Ctrl"), U_MT("I", "Alt"),  U_MT("O", "Meta"), \
 : U_LT("Z", U_BUTTON),U_MT("X", "AltGR"),"C",               "D",               "V",               "K",               "H",               U_S("&lt;", U_COMM),U_SMT("&gt;", ".", "AltGR"),U_SLT("?", "/", U_BUTTON),\
-: U_NP,              U_NP,              U_LT("Esc", U_MEDIA),U_LT("Space", U_NAV),U_LT("Tab", U_MOUSE),U_LT("Enter", U_SYM),U_LT("Bckspc", U_NUM),U_LT("Delete", U_FUN),U_NP,              U_NP
+: U_NP,              U_NP,              U_LT("Esc", U_MEDIA),U_LT("Space", U_MOUSE),U_LT("Tab", U_NAV),U_LT("Enter", U_SYM),U_LT("Bckspc", U_NUM),U_LT("Delete", U_FUN),U_NP,              U_NP
 
 
 **** table-layer-half
