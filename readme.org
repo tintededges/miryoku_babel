@@ -15,7 +15,7 @@ This document describes Miryoku Babel only.  For Miryoku documentation, implemen
 This repo adds a layer, named "GAME", which is activated with the upper right button of the functions ("FUN") layer. 
 The button toggles the layer until the same button is hit again.
 
-The layout is detailed [[#game][in the "game" layer below]]
+The layout is detailed [[#game][in the "game" layer below]]. "TG(U_GAME)" toggles the gaming layer.
 
 To make your own changes based off of this, you can check out https://github.com/tintededges/miryoku_babel-Gaming-layer
 
@@ -198,8 +198,6 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 
 
 *** Game
-
-The ~Game~ layer isn't used by default, but can be enabled by binding any key to ~TG(U_GAME)~.
 
 #+NAME: game-l
 | 1          | 2          | 3          | 4          | TG(U_GAME) |
